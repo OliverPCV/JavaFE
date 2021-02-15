@@ -13,7 +13,9 @@
       <th scope="row">1</th>
       <td>{{user.id}}</td>
       <td>{{user.jmeno}}</td>
-      <button class="btn" (click)="delete()">Delete</button>
+      <button class="btn" (click)="detail(user.id)">Detail</button>
+
+      <button class="btn" (click)="delete(user.id)">Delete</button>
     </tr>
 
     </tbody>
