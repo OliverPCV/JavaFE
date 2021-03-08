@@ -1,5 +1,5 @@
 {
-  "/JavaEEApi": {
+  "/api": {
     "target": "http://localhost:8080/JavaEEApi",
     "secure": false
   }
