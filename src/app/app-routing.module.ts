@@ -4,6 +4,7 @@ import {LoginComponent} from './login/login.component';
 import {UsersComponent} from './users/users.component';
 import {UserComponent} from './user/user.component';
 import {HomeComponent} from './home/home.component';
+import {RegisterComponent} from './register/register.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,7 @@ const routes: Routes = [
   {path: 'users', component: UsersComponent},
   {path: 'user', component: UserComponent},
   {path: 'home', component: HomeComponent},
-
+  {path: 'register', component: RegisterComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 
 ];

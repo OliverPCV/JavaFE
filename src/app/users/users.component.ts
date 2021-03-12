@@ -16,6 +16,7 @@ export class UsersComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) {
     this.http.get(this.url).subscribe((data: User[]) => {
       this.users = data;
+      console.log(this.users);
     });
   }
 
