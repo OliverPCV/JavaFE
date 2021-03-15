@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
       jmeno: this.jmeno,
       heslo: this.heslo
     }
-    this.http.post(this.url, body, {observe: 'response'}).subscribe((data) => {
+    this.http.post(this.url, body, {observe: 'response'}).subscribe((data: any) => {
       console.log(data);
       this.router.navigate(['/login']);
 

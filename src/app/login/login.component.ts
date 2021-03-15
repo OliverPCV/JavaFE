@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   jmeno = '';
   heslo = '';
   user: User[] = [];
-  url = 'api/users';
+  url = 'api/users/login';
 
   constructor(private router: Router, private http: HttpClient, private activatedRoute: ActivatedRoute) { }
 
@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
       jmeno: this.jmeno,
       heslo: this.heslo
     }
-    this.http.post(this.url, body, {observe: 'response'}).subscribe((data) => {
+    this.http.post(this.url, body, {observe: 'response'}).subscribe((data: any) => {
       console.log(data);
       this.router.navigate(['/users']);
 
