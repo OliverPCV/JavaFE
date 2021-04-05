@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
+import { LoggedinComponent } from './loggedin/loggedin.component';
+import { EditComponent } from './edit/edit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RegisterComponent } from './register/register.component';
     UsersComponent,
     UserComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoggedinComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
